@@ -1,0 +1,68 @@
+/*Todas as demais midias*/
+/*Typical Device Breakpoints
+Pequenas Telas: max 600px
+Celular: min-width 600px
+Tablet:min-width 768px
+Desktop:min-width 768px
+TV:min-width 1200px
+Grandes Telas: acima de 1200 px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+img#pc{display: none;}
+img#print{display: block;}
+img#tablet{display: none;}
+img#tv{display: none;}
+img#phone{display: none;}
+
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+img#pc{display: none;}
+img#print{display: none;}
+img#tablet{display: block;}
+img#tv{display: none;}
+img#phone{display: none;}
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+img#pc{display: block;}
+img#print{display: none;}
+img#tablet{display: none;}
+img#tv{display: none;}
+img#phone{display: none;}
+
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+img#pc{display: none;}
+img#print{display: none;}
+img#tablet{display: none;}
+img#tv{display: block;}
+img#phone{display: none;}
+
+}
+
